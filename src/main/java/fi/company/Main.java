@@ -7,6 +7,7 @@ public class Main {
     public static void main(String [] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.println("1) rock, 2) paper, 3) scissors?");
         int pelaaja = 0;
         int pelaajaAi = 0;
         do {
@@ -42,12 +43,14 @@ public class Main {
             }
         } while(pelaaja != 3 && pelaajaAi !=3);
 
+        System.out.println("-------------------------------");
         System.out.println("Pelaaja " + pelaaja + " tietokone " + pelaajaAi);
         if(pelaaja < pelaajaAi) {
-            System.out.println("Computer won!");
+            System.out.println("Computer won the match!");
         } else {
-            System.out.println("You won!");
+            System.out.println("You won the match!");
         }
+        System.out.println("-------------------------------");
         
     }
 }
