@@ -7,7 +7,7 @@ public class Main {
     public static void main(String [] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("1) rock, 2) paper, 3) scissors?");
+        System.out.println("rock, paper or scissors?");
         int pelaaja = 0;
         int pelaajaAi = 0;
         do {
@@ -50,7 +50,7 @@ public class Main {
             } else {
                 System.out.println("Tie!");
             }
-        } while(pelaaja != 3 && pelaajaAi !=3);
+        } while(pelaaja !=3 && pelaajaAi !=3);
 
         System.out.println("-------------------------------");
         System.out.println("Pelaaja " + pelaaja + " tietokone " + pelaajaAi);
