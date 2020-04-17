@@ -13,6 +13,14 @@ public class Main {
         do {
             System.out.println("Choose your weapon:");
             String valinta = input.nextLine();
+            try {
+                if(!valinta.equals("rock") && !valinta.equals("paper") && !valinta.equals("scissors")) {
+                    throw new Exception();
+                }
+            } catch(Exception e) {
+                System.out.println("Choose rock, paper or scissors");
+                continue;
+            }
 
             String tietokone = "";
             int number = (int) (Math.random() * 3);
@@ -24,6 +32,7 @@ public class Main {
                 tietokone = "scissors";
             }
             System.out.println("Computer chose " + tietokone);
+
             if(!valinta.equals(tietokone)) {
                 if(valinta.equals("rock") && tietokone.equals("paper")) {
                     System.out.println("Computer won!");
